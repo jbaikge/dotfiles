@@ -1,0 +1,37 @@
+! Jellybeans
+urxvt*background:  #080808
+urxvt*foreground:  #808080
+urxvt*color0:      #1A1A1A
+urxvt*color8:      #404040
+urxvt*color1:      #D75F5F
+urxvt*color9:      #EA8484
+urxvt*color2:      #87AF5F
+urxvt*color10:     #C7F09F
+urxvt*color3:      #FFAF5F
+urxvt*color11:     #FFCC9A
+urxvt*color4:      #87AFD7
+urxvt*color12:     #A5CAEF
+urxvt*color5:      #8787AF
+urxvt*color13:     #A6A6DE
+urxvt*color6:      #5F8787
+urxvt*color14:     #69B2B2
+urxvt*color7:      #808080
+urxvt*color15:     #D7D7D7
+
+urxvt*boldMode:    false
+urxvt*colorBDMode: true
+urxvt*colorBD:     #909090
+! urxvt*font:        -misc-termsynu-medium-r-normal-*-13-*-*-*-*-*-iso10646-1
+urxvt*loginShell:  true
+urxvt*savelines:   2000
+
+urxvt*blurRadius: 15
+urxvt*cursorBlink: true
+urxvt*cursorUnderline: true
+urxvt*fading: 50
+urxvt*scrollBar_right: true
+urxvt*scrollColor: rgb:33/33/33
+urxvt*shading: 20
+urxvt*termName: rxvt
+urxvt*transparent: true
+

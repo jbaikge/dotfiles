@@ -1,0 +1,14 @@
+#!/bin/bash
+
+## Dropbox on
+#dropbox start
+## Beeps off
+xset -b &
+## DPMS monitor setting (standby -> suspend -> off) (seconds)
+xset dpms 300 600 900 &
+## OSD
+#dunst &
+## Fades and renders
+#xcompmgr -cf -r 0 -D 6 &
+## Background
+#. ~/.fehbg

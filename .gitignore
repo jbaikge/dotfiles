@@ -1,0 +1,8 @@
+*
+!.gitignore
+!.config
+!.config/**
+!.Xresources
+!.xsession
+!.synergy.conf
+!.bashrc
