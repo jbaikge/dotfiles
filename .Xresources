@@ -1,3 +1,5 @@
+! Color numbers: black red green yellow blue magenta cyan white
+!                0,8   1,9 2,10  3,11   4,12 5,13    6,14 7,15
 !! Jellybeans
 !urxvt*color0:      #1A1A1A
 !urxvt*color8:      #404040
@@ -17,22 +19,22 @@
 !urxvt*color15:     #D7D7D7
 
 ! www.reddit.com/r/unixporn/comments/179x53/archdwm/
-urxvt*color0:    #1b1d1e
+urxvt*color0:    #1B1D1E
 urxvt*color8:    #505354
-urxvt*color1:    #f92672
-urxvt*color9:    #ff5995
-urxvt*color2:    #82b414
-urxvt*color10:   #b6e354
-urxvt*color3:    #fd971f
-urxvt*color11:   #feed6c
-urxvt*color4:    #56c2d6
-urxvt*color12:   #8cedff
-urxvt*color5:    #8c54fe
-urxvt*color13:   #9e6ffe
+urxvt*color1:    #F92672
+urxvt*color9:    #FF5995
+urxvt*color2:    #82B414
+urxvt*color10:   #B6E354
+urxvt*color3:    #FD971F
+urxvt*color11:   #FEED6C
+urxvt*color4:    #56C2D6
+urxvt*color12:   #8CEDFF
+urxvt*color5:    #8C54FE
+urxvt*color13:   #9E6FFE
 urxvt*color6:    #465457
-urxvt*color14:   #899ca1
-urxvt*color7:    #ccccc6
-urxvt*color15:   #f8f8f2
+urxvt*color14:   #899CA1
+urxvt*color7:    #CCCCC6
+urxvt*color15:   #F8F8F2
 
 urxvt*background:  #080808
 urxvt*foreground:  #808080
