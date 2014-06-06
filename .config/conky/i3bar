@@ -1,0 +1,46 @@
+background           no
+out_to_console       yes
+out_to_x             no
+update_interval      1
+total_run_times      0
+short_units          yes
+pad_percents         3
+override_utf8_locale yes
+
+TEXT
+,[
+# CPU
+	{
+		"full_text": " Î [$cpubar]",
+		"color":"\#00A9B5",
+		"separator": false
+	},
+	{
+		"full_text": "0%",
+		"min_width": "100%",
+		"align": "left",
+		"color": "\#00A9B5"
+	},
+# Network
+	{
+		"full_text": "Þ ${upspeed}",
+		"color":"\#ff0000",
+		"separator": false
+	},
+#Shows downloadspeed
+	{
+		"full_text": "${downspeed} Ý",
+		"color":"\#00fff2"
+	},
+# Time (Human Readable)
+	{
+		"full_text": "${time %a %d %b} ${time %H:%M:%S}",
+		"color": "\#2FDC57",
+		"separator": false
+	},
+# Time (UNIX)
+	{
+		"full_text": "${time %s}",
+		"color": "\#666666"
+	}
+]
