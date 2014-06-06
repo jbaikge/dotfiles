@@ -1,5 +1,7 @@
 *
 !.gitignore
+!.bin
+!.bin/**
 !.config
 !.config/**
 !.Xresources
