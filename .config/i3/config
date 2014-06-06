@@ -28,6 +28,8 @@ bar {
 	output DVI-I-2
 	position top
 	#font -misc-termsyn.icons-medium-r-normal-*-14-*-*-100-*-*-iso8859-1
+	#font -*-termsynu-medium-*-*-*-11-*-*-*-*-*-iso10646-*
+	font -*-termsyn.icons-medium-*-*-*-12-*-*-*-*-*-*-*
 	workspace_buttons yes
 	colors {
 		background #080808
@@ -39,8 +41,7 @@ bar {
 		inactive_workspace #202020 #080808 #808080
 		urgent_workspace   #ac4142 #080808 #ffffff
 	}
-	#status_command i3status --config ~/.config/i3status/DVI-I-2
-	status_command i3status
+	status_command ~/.bin/conky
 }
 
 bar {
