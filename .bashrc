@@ -46,6 +46,7 @@ PS1='\[$txtgrn\]\u@\h\[$txtrst\]:\[$txtcyn\]\w\[$txtrst\]$ '
 
 # Remove duplicates from history - ignoredups,ignorespace
 export HISTCONTROL=ignoreboth
+export PATH=~/bin:$PATH
 
 # append to the history file, don't overwrite it
 shopt -s histappend
