@@ -6,7 +6,7 @@ pad_percents         3
 short_units          yes
 temperature_unit     fahrenheit
 total_run_times      0
-update_interval      1
+update_interval      5
 
 TEXT
 ,[
