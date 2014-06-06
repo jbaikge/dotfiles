@@ -1,6 +1,4 @@
 !! Jellybeans
-!urxvt*background:  #080808
-!urxvt*foreground:  #808080
 !urxvt*color0:      #1A1A1A
 !urxvt*color8:      #404040
 !urxvt*color1:      #D75F5F
@@ -35,6 +33,9 @@ urxvt*color6:    #465457
 urxvt*color14:   #899ca1
 urxvt*color7:    #ccccc6
 urxvt*color15:   #f8f8f2
+
+urxvt*background:  #080808
+urxvt*foreground:  #808080
 
 urxvt*boldMode:    false
 urxvt*colorBDMode: true
