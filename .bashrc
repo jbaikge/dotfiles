@@ -61,3 +61,5 @@ trap EC ERR
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto --exclude-dir=.svn --exclude-dir=.git'
+alias t='~/bin/todo.sh -d ~/.config/todo/config -t'
+complete -F _todo t
