@@ -41,8 +41,13 @@ bakcyn=$(tput setab 6)            # Cyan
 bakwht=$(tput setab 7)            # White
 bakdef=$(tput setab 9)            # Default
 txtrst=$(tput sgr0)               # Text Reset
-PS1='[\u@\h \W]\$ '
-PS1='\[$txtgrn\]\u@\h\[$txtrst\]:\[$txtcyn\]\w\[$txtrst\]$ '
+case $HOSTNAME in
+	"sable")    hostcolor=$txtylw ;;
+	"sharpie")  hostcolor=$txtblu ;;
+	"squeaker") hostcolor=$txtred ;;
+	*)          hostcolor=$bldwht ;;
+esac
+PS1='\[$txtwht\]\u\[$txtblk\]@\[$hostcolor\]\h\[$txtrst\]:\[$txtcyn\]\w\[$txtrst\]$ '
 
 # Remove duplicates from history - ignoredups,ignorespace
 export HISTCONTROL=ignoreboth
