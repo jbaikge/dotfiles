@@ -42,14 +42,15 @@ urxvt*foreground:  #808080
 urxvt*boldMode:    false
 urxvt*colorBDMode: true
 urxvt*colorBD:     #909090
-! urxvt*font:        -misc-termsynu-medium-r-normal-*-13-*-*-*-*-*-iso10646-1
+urxvt*font:        -*-termsynu-medium-*-*-*-11-*-*-*-*-*-iso10646-*
+urxvt*boldFont:
 urxvt*loginShell:  true
 urxvt*savelines:   2000
 
 urxvt*blurRadius: 15
 urxvt*cursorBlink: true
 urxvt*cursorUnderline: true
-urxvt*fading: 50
+urxvt*fading: 30
 urxvt*scrollBar_right: true
 urxvt*scrollColor: rgb:33/33/33
 urxvt*shading: 20
