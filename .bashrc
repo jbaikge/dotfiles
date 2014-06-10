@@ -46,7 +46,11 @@ PS1='\[$txtgrn\]\u@\h\[$txtrst\]:\[$txtcyn\]\w\[$txtrst\]$ '
 
 # Remove duplicates from history - ignoredups,ignorespace
 export HISTCONTROL=ignoreboth
-export PATH=~/bin:$PATH
+export PATH=${HOME}/bin:$PATH
+export TODOTXT_CFG_FILE=${HOME}/.config/todo/config
+export TODOTXT_DATE_ON_ADD=1
+export TODOTXT_DEFAULT_ACTION=list
+export TODOTXT_PRESERVE_LINE_NUMBERS=1
 
 # append to the history file, don't overwrite it
 shopt -s histappend
@@ -61,5 +65,6 @@ trap EC ERR
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto --exclude-dir=.svn --exclude-dir=.git'
-alias t='~/bin/todo.sh -d ~/.config/todo/config -t'
+alias punch='/usr/bin/env python ~/bin/Punch.py'
+alias t='~/bin/todo.sh'
 complete -F _todo t
