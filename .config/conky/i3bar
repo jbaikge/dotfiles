@@ -14,49 +14,49 @@ TEXT
 ${if_mounted /}
 	{
 		"color":     "\#${if_match ${fs_free_perc /} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": "/ ${fs_free /}"
+		"full_text": " / ${fs_free /} "
 	},
 $endif
 ${if_mounted /tmp}
 	{
 		"color":     "\#${if_match ${fs_free_perc /tmp} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": "/tmp ${fs_free /tmp}"
+		"full_text": " /tmp ${fs_free /tmp} "
 	},
 $endif
 ${if_mounted /var}
 	{
 		"color":     "\#${if_match ${fs_free_perc /var} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": "/var ${fs_free /var}"
+		"full_text": " /var ${fs_free /var} "
 	},
 $endif
 ${if_mounted /home}
 	{
 		"color":     "\#${if_match ${fs_free_perc /home} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": "/home ${fs_free /home}"
+		"full_text": " /home ${fs_free /home} "
 	},
 $endif
 ${if_mounted /data/code}
 	{
 		"color":     "\#${if_match ${fs_free_perc /data/code} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": "/data/code ${fs_free /data/code}"
+		"full_text": " /data/code ${fs_free /data/code} "
 	},
 $endif
 ${if_mounted /data/mysql}
 	{
 		"color":     "\#${if_match ${fs_free_perc /data/mysql} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": "/data/mysql ${fs_free /data/mysql}"
+		"full_text": " /data/mysql ${fs_free /data/mysql} "
 	},
 $endif
 ${if_mounted /data/mongodb}
 	{
 		"color":     "\#${if_match ${fs_free_perc /data/mongodb} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": "/data/mongodb ${fs_free /data/mongodb}"
+		"full_text": " /data/mongodb ${fs_free /data/mongodb} "
 	},
 $endif
 ${if_mounted /av}
 	{
 		"color":     "\#${if_match ${fs_free_perc /av} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": "/av ${fs_free /av}"
+		"full_text": " /av ${fs_free /av} "
 	},
 $endif
 # Memory
@@ -71,18 +71,19 @@ $endif
 		"full_text": "Ñ ${freq_g}GHz $cpu%",
 		"min_width": "Ñ 9.99GHz 100%"
 	},
-# Network
+# Network Upload
 	{
 		"align":     "right",
 		"color":     "\#FD971F",
-		"full_text": "${upspeed} Þ",
+		"full_text": "${if_up enp5s0f0}${upspeed enp5s0f0}${else}${upspeed eth0}${endif} Þ",
 		"min_width": "99.9K Þ",
-		"separator": false
+		"separator": false,
+		"separator_block_width": 0
 	},
-#Shows downloadspeed
+# Network Download
 	{
 		"color":     "\#FEED6C",
-		"full_text": "Ý ${downspeed}",
+		"full_text": "Ý ${if_up enp5s0f0}${downspeed enp5s0f0}${else}${downspeed eth0}${endif}",
 		"min_width": "Ý 99.9K"
 	},
 # Weather
