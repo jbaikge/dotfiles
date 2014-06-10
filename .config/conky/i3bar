@@ -75,7 +75,7 @@ $endif
 	{
 		"align":     "right",
 		"color":     "\#FD971F",
-		"full_text": "${if_up enp5s0f0}${upspeed enp5s0f0}${else}${upspeed eth0}${endif} Þ",
+		"full_text": "${if_up enp5s0f0}${upspeed enp5s0f0}${endif}${if_up enp2s0}${upspeed enp2s0}${else}${upspeed eth0}${endif} Þ",
 		"min_width": "99.9K Þ",
 		"separator": false,
 		"separator_block_width": 0
@@ -83,7 +83,7 @@ $endif
 # Network Download
 	{
 		"color":     "\#FEED6C",
-		"full_text": "Ý ${if_up enp5s0f0}${downspeed enp5s0f0}${else}${downspeed eth0}${endif}",
+		"full_text": "Ý ${if_up enp5s0f0}${downspeed enp5s0f0}${endif}${if_up enp2s0}${downspeed enp2s0}${else}${downspeed eth0}${endif}",
 		"min_width": "Ý 99.9K"
 	},
 # Weather
