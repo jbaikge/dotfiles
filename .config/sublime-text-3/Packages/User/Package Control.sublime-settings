@@ -1,0 +1,23 @@
+{
+	"auto_upgrade_last_run": null,
+	"installed_packages":
+	[
+		"Alignment",
+		"AsciiDoc",
+		"BracketHighlighter",
+		"Conky.tmLanguage",
+		"Dockerfile Syntax Highlighting",
+		"GoSublime",
+		"INI",
+		"LESS",
+		"Monokai Extended",
+		"NASM x86 Assembly",
+		"Package Control",
+		"Package Syncing",
+		"Puppet",
+		"Theme - Phoenix",
+		"Theme - Soda",
+		"TOML",
+		"Twitter Bootstrap ClassNames Completions"
+	]
+}

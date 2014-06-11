@@ -1,0 +1,80 @@
+{
+	"auto_complete": false,
+	"color_scheme": "Packages/User/Monokai Soda.tmTheme",
+	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Droid Sans Mono",
+	"font_size": 8,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"phoenix_color_expanded_folder": true,
+	"phoenix_color_expanded_folder_DOC":
+	[
+		"Color expanded folders"
+	],
+	"phoenix_color_red": true,
+	"phoenix_color_red_DOC":
+	[
+		"Color theme for chrome",
+		"Light: blue, darkblue; Dark: red, green, blue, orange, yellow, pink"
+	],
+	"phoenix_dirty_bottom_bar": true,
+	"phoenix_dirty_bottom_bar_DOC":
+	[
+		"Color dirty state along bottom tab"
+	],
+	"phoenix_dirty_bottom_bar_yellow": true,
+	"phoenix_dirty_bottom_bar_yellow_DOC":
+	[
+		"Light: blue, darkblue; Dark: red, green, blue, orange, yellow, pink"
+	],
+	"phoenix_eighties": false,
+	"phoenix_eighties_DOC":
+	[
+		"Eighties mode for the tab"
+	],
+	"phoenix_highlight_current_tab": true,
+	"phoenix_highlight_current_tab_DOC":
+	[
+		"Highlight text label in tab"
+	],
+	"phoenix_sidebar_tree_small": true,
+	"phoenix_sidebar_tree_small_DOC":
+	[
+		"Row height on sidebar",
+		"Sizes: xsmall, small, medium, large, xlarge"
+	],
+	"phoenix_solid_current_tab": true,
+	"phoenix_solid_current_tab_DOC":
+	[
+		"Set the tab background to the theme color"
+	],
+	"phoenix_tabs_auto_width": false,
+	"phoenix_tabs_auto_width_DOC":
+	[
+		"Automatic width tabs"
+	],
+	"phoenix_tabs_font_normal": true,
+	"phoenix_tabs_font_normal_DOC":
+	[
+		"Tab font size",
+		"Sizes: small, normal, large, xlarge"
+	],
+	"phoenix_tabs_small": true,
+	"phoenix_tabs_small_DOC":
+	[
+		"Tab height",
+		"Sizes: small, medium, normal, large, xlarge"
+	],
+	"rulers":
+	[
+		80
+	],
+	"save_on_focus_lost": true,
+	"soda_classic_tabs": false,
+	"soda_folder_icons": true,
+	"theme": "Phoenix Dark.sublime-theme",
+	"word_wrap": false
+}
