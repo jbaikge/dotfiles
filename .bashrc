@@ -68,6 +68,7 @@ shopt -s checkwinsize
 EC() { echo -e '\e[1;33m'code $?'\e[m'; }
 trap EC ERR
 
+alias curl='curl -s'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto --exclude-dir=.svn --exclude-dir=.git'
 alias punch='/usr/bin/env python ~/bin/Punch.py'
