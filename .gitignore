@@ -1,11 +1,1 @@
 *
-!.gitignore
-!.gitconfig
-!.bin
-!.bin/**
-!.config
-!.config/**
-!.Xresources
-!.xsession
-!.synergy.conf
-!.bashrc
