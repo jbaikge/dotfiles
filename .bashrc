@@ -50,8 +50,9 @@ esac
 PS1='\[$txtwht\]\u\[$txtblk\]@\[$hostcolor\]\h\[$txtrst\]:\[$txtcyn\]\w\[$txtrst\]$ '
 
 # Remove duplicates from history - ignoredups,ignorespace
+export GOPATH=${HOME}/code/go
 export HISTCONTROL=ignoreboth
-export PATH=${HOME}/bin:$PATH
+export PATH=${HOME}/bin:${HOME}/code/go/bin:$PATH
 export TODOTXT_CFG_FILE=${HOME}/.config/todo/config
 export TODOTXT_DATE_ON_ADD=1
 export TODOTXT_DEFAULT_ACTION=list
@@ -70,8 +71,9 @@ trap EC ERR
 
 alias curl='curl -s'
 alias docker='sudo docker'
-alias ls='ls --color=auto'
+alias go='sudo docker run --rm --volume /data/code/go:/gopath local/go'
 alias grep='grep --color=auto --exclude-dir=.svn --exclude-dir=.git'
+alias ls='ls --color=auto'
 alias punch='/usr/bin/env python ~/bin/Punch.py'
 [[ -x /usr/bin/subl3 ]] && alias subl='subl3'
 alias t='~/bin/todo.sh'
