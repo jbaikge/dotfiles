@@ -69,8 +69,10 @@ EC() { echo -e '\e[1;33m'code $?'\e[m'; }
 trap EC ERR
 
 alias curl='curl -s'
+alias docker='sudo docker'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto --exclude-dir=.svn --exclude-dir=.git'
 alias punch='/usr/bin/env python ~/bin/Punch.py'
+[[ -x /usr/bin/subl3 ]] && alias subl='subl3'
 alias t='~/bin/todo.sh'
 complete -F _todo t
