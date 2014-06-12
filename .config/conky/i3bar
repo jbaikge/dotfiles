@@ -14,49 +14,37 @@ TEXT
 ${if_mounted /}
 	{
 		"color":     "\#${if_match ${fs_free_perc /} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " / ${fs_free /} "
+		"full_text": " ROOT ${fs_free /} "
 	},
 $endif
 ${if_mounted /tmp}
 	{
 		"color":     "\#${if_match ${fs_free_perc /tmp} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " /tmp ${fs_free /tmp} "
+		"full_text": " TMP ${fs_free /tmp} "
 	},
 $endif
 ${if_mounted /var}
 	{
 		"color":     "\#${if_match ${fs_free_perc /var} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " /var ${fs_free /var} "
+		"full_text": " VAR ${fs_free /var} "
 	},
 $endif
 ${if_mounted /home}
 	{
 		"color":     "\#${if_match ${fs_free_perc /home} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " /home ${fs_free /home} "
-	},
-$endif
-${if_mounted /data/code}
-	{
-		"color":     "\#${if_match ${fs_free_perc /data/code} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " /data/code ${fs_free /data/code} "
+		"full_text": " HOME ${fs_free /home} "
 	},
 $endif
 ${if_mounted /data/mysql}
 	{
 		"color":     "\#${if_match ${fs_free_perc /data/mysql} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " /data/mysql ${fs_free /data/mysql} "
-	},
-$endif
-${if_mounted /data/mongodb}
-	{
-		"color":     "\#${if_match ${fs_free_perc /data/mongodb} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " /data/mongodb ${fs_free /data/mongodb} "
+		"full_text": " DATABASE ${fs_free /data/mysql} "
 	},
 $endif
 ${if_mounted /av}
 	{
 		"color":     "\#${if_match ${fs_free_perc /av} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " /av ${fs_free /av} "
+		"full_text": " AV ${fs_free /av} "
 	},
 $endif
 # Memory
