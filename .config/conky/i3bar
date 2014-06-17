@@ -10,41 +10,52 @@ update_interval      5
 
 TEXT
 ,[
-# Hard Drives
+# Mountpoint: /
 ${if_mounted /}
 	{
 		"color":     "\#${if_match ${fs_free_perc /} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " ROOT ${fs_free /} "
+		"full_text": " ROOT ${fs_free /} ${diskio sdc} ",
+		"min_width": " ROOT 9999B 9999M "
 	},
 $endif
-${if_mounted /tmp}
-	{
-		"color":     "\#${if_match ${fs_free_perc /tmp} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " TMP ${fs_free /tmp} "
-	},
-$endif
+# Mountpoint: /var
 ${if_mounted /var}
 	{
 		"color":     "\#${if_match ${fs_free_perc /var} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " VAR ${fs_free /var} "
+		"full_text": " VAR ${fs_free /var} ${diskio sda} ",
+		"min_width": " VAR 9999B 9999M "
 	},
 $endif
+# Mountpoint: /home
 ${if_mounted /home}
 	{
 		"color":     "\#${if_match ${fs_free_perc /home} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " HOME ${fs_free /home} "
+		"full_text": " HOME ${fs_free /home} ${diskio sdd} ",
+		"min_width": " HOME 9999B 9999M "
 	},
 $endif
+# Mountpoint: /data/database
 ${if_mounted /data/database}
 	{
 		"color":     "\#${if_match ${fs_free_perc /data/database} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " DATABASE ${fs_free /data/database} "
+		"full_text": " DATABASE ${fs_free /data/database} ${diskio sdb} ",
+		"min_width": " DATABASE 9999B 9999M "
 	},
 $endif
+# Mountpoint: /av
 ${if_mounted /av}
 	{
 		"color":     "\#${if_match ${fs_free_perc /av} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " AV ${fs_free /av} "
+		"full_text": " AV ${fs_free /av} ",
+		"min_width": " AV 9999B 9999M "
+	},
+$endif
+# Mountpoint: /tmp
+${if_mounted /tmp}
+	{
+		"color":     "\#${if_match ${fs_free_perc /tmp} < 25}F92672${else}CCCCC6${endif}",
+		"full_text": " TMP ${fs_free /tmp} ",
+		"min_width": " TMP 9999B "
 	},
 $endif
 # Memory
