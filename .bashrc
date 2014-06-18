@@ -71,10 +71,10 @@ trap EC ERR
 
 alias curl='curl -s'
 alias docker='sudo docker'
-[[ -x /usr/bin/docker ]] && alias go='sudo docker run --rm --volume /data/code/go:/gopath local/go'
+[[ -x /usr/bin/docker ]] && alias go='sudo docker run --rm --volume /data/code/go:/gopath --workdir=$(pwd | sed s@^.*/src/@/gopath/src/@) local/go'
 alias grep='grep --color=auto --exclude-dir=.svn --exclude-dir=.git'
 alias ls='ls --color=auto'
-[[ -x /usr/bin/docker ]] && alias mongo='docker run -it --rm dockerfile/mongodb mongo'
+[[ -x /usr/bin/docker ]] && alias mongo='docker run -it --rm --volume /data:/data dockerfile/mongodb mongo'
 alias punch='/usr/bin/env python ~/bin/Punch.py'
 [[ -x /usr/bin/subl3 ]] && alias subl='subl3'
 alias t='~/bin/todo.sh'
