@@ -11,43 +11,35 @@ update_interval      5
 TEXT
 ,[
 	{
-		"color":                 "\#${if_empty ${cmdline_to_pid docker}}F92672${else}82B414${endif}",
-		"full_text":             "DOCKER"
-#		"min_width":             "",
-#		"align":                 "",
-#		"separator":             false,
-#		"separator_block-width": 0
+		"color":     "\#${if_empty ${cmdline_to_pid docker     }}505354${else}82B414${endif}",
+		"full_text": "DOCKER"
 	},
 	{
-		"color":                 "\#${if_empty ${cmdline_to_pid g15daemon}}F92672${else}82B414${endif}",
-		"full_text":             "G15"
-#		"min_width":             "",
-#		"align":                 "",
-#		"separator":             false,
-#		"separator_block-width": 0
+		"color":     "\#${if_empty ${cmdline_to_pid g15daemon  }}505354${else}82B414${endif}",
+		"full_text": "G15"
 	},
 	{
-		"color":                 "\#${if_empty ${cmdline_to_pid sshd}}F92672${else}82B414${endif}",
-		"full_text":             "SSHD"
-#		"min_width":             "",
-#		"align":                 "",
-#		"separator":             false,
-#		"separator_block-width": 0
+		"color":     "\#${if_empty ${cmdline_to_pid sshd       }}505354${else}82B414${endif}",
+		"full_text": "SSHD"
 	},
 	{
-		"color":                 "\#${if_empty ${cmdline_to_pid rescuetime}}F92672${else}82B414${endif}",
-		"full_text":             "RESCUETIME"
-#		"min_width":             "",
-#		"align":                 "",
-#		"separator":             false,
-#		"separator_block-width": 0
+		"color":     "\#${if_empty ${cmdline_to_pid rescuetime }}505354${else}82B414${endif}",
+		"full_text": "RESCUETIME"
 	},
 	{
-		"color":                 "\#${if_empty ${cmdline_to_pid synergy}}F92672${else}82B414${endif}",
-		"full_text":             "SYNERGY"
-#		"min_width":             "",
-#		"align":                 "",
-#		"separator":             false,
-#		"separator_block-width": 0
+		"color":     "\#${if_empty ${cmdline_to_pid synergy    }}505354${else}82B414${endif}",
+		"full_text": "SYNERGY"
+	},
+	{
+		"color":     "\#${if_empty ${cmdline_to_pid apache2    }}505354${else}82B414${endif}",
+		"full_text": "APACHE"
+	},
+	{
+		"color":     "\#${if_empty ${cmdline_to_pid mysql      }}505354${else}82B414${endif}",
+		"full_text": "MYSQL"
+	},
+	{
+		"color":     "\#${if_empty ${cmdline_to_pid dnsmasq    }}505354${else}82B414${endif}",
+		"full_text": "DNSMASQ"
 	}
 ]
