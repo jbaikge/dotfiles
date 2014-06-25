@@ -27,7 +27,7 @@ bar {
 		inactive_workspace #202020 #080808 #808080
 		urgent_workspace   #ac4142 #080808 #ffffff
 	}
-	status_command i3status
+	status_command ~/.bin/conky-left
 }
 
 bar {
@@ -48,7 +48,7 @@ bar {
 		inactive_workspace #202020 #080808 #808080
 		urgent_workspace   #ac4142 #080808 #ffffff
 	}
-	status_command ~/.bin/conky
+	status_command ~/.bin/conky-right
 }
 
 ### End modifications
