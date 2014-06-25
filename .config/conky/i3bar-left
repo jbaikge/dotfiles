@@ -1,0 +1,53 @@
+background           no
+out_to_console       yes
+out_to_x             no
+override_utf8_locale yes
+pad_percents         3
+short_units          yes
+temperature_unit     fahrenheit
+total_run_times      0
+update_interval      5
+
+TEXT
+,[
+	{
+		"color":                 "\#${if_empty ${cmdline_to_pid docker}}F92672${else}82B414${endif}",
+		"full_text":             "DOCKER"
+#		"min_width":             "",
+#		"align":                 "",
+#		"separator":             false,
+#		"separator_block-width": 0
+	},
+	{
+		"color":                 "\#${if_empty ${cmdline_to_pid g15daemon}}F92672${else}82B414${endif}",
+		"full_text":             "G15"
+#		"min_width":             "",
+#		"align":                 "",
+#		"separator":             false,
+#		"separator_block-width": 0
+	},
+	{
+		"color":                 "\#${if_empty ${cmdline_to_pid sshd}}F92672${else}82B414${endif}",
+		"full_text":             "SSHD"
+#		"min_width":             "",
+#		"align":                 "",
+#		"separator":             false,
+#		"separator_block-width": 0
+	},
+	{
+		"color":                 "\#${if_empty ${cmdline_to_pid rescuetime}}F92672${else}82B414${endif}",
+		"full_text":             "RESCUETIME"
+#		"min_width":             "",
+#		"align":                 "",
+#		"separator":             false,
+#		"separator_block-width": 0
+	},
+	{
+		"color":                 "\#${if_empty ${cmdline_to_pid synergy}}F92672${else}82B414${endif}",
+		"full_text":             "SYNERGY"
+#		"min_width":             "",
+#		"align":                 "",
+#		"separator":             false,
+#		"separator_block-width": 0
+	}
+]
