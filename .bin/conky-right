@@ -4,4 +4,4 @@ echo '{"version":1}'
 # Open endless array
 echo '[[]'
 # Send blocks of updates from conky
-exec conky --config=$HOME/.config/conky/i3bar
+exec conky --config=$HOME/.config/conky/i3bar-right
