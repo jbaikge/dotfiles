@@ -30,6 +30,6 @@
 	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	ls = ls-files
 [pull]
-	rebase = true
+	rebase = false
 [push]
 	default = simple
