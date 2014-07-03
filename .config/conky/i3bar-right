@@ -46,7 +46,7 @@ $endif
 ${if_existing /av}${if_mounted /av}
 	{
 		"color":     "\#${if_match ${fs_free_perc /av} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " AV ${fs_free /av} ",
+		"full_text": " AV ${fs_free /av} ${diskio sdc} ",
 		"min_width": " AV 9999B 9999M "
 	},
 $endif$endif
