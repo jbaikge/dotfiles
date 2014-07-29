@@ -77,5 +77,6 @@ alias ls='ls --color=auto'
 [[ -x /usr/bin/docker ]] && alias mongo='docker run -it --rm --volume /data:/data dockerfile/mongodb mongo'
 alias punch='/usr/bin/env python ~/bin/Punch.py'
 [[ -x /usr/bin/subl3 ]] && alias subl='subl3'
+[[ -x /usr/bin/docker ]] && alias heroku='sudo docker run --rm --volume /data:/data --workdir=$(pwd | sed s@^/home/jake/code/@/data/code/@) local/heroku'
 alias t='~/bin/todo.sh'
 complete -F _todo t
