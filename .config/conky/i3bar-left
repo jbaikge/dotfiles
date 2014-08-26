@@ -11,6 +11,10 @@ update_interval      5
 TEXT
 ,[
 	{
+		"color":     "\#${if_empty ${cmdline_to_pid ntpd       }}505354${else}82B414${endif}",
+		"full_text": "NTP"
+	},
+	{
 		"color":     "\#${if_empty ${cmdline_to_pid docker     }}505354${else}82B414${endif}",
 		"full_text": "DOCKER"
 	},
