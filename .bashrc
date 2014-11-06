@@ -49,7 +49,7 @@ case $HOSTNAME in
 esac
 PS1='\[$txtwht\]\u\[$txtblk\]@\[$hostcolor\]\h\[$txtrst\]:\[$txtcyn\]\w\[$txtrst\]$ '
 
-# Remove duplicates from history - ignoredups,ignorespace
+export EDITOR=/usr/bin/vim
 export GOPATH=${HOME}/code/go
 export HISTCONTROL=ignoreboth
 export PATH=${HOME}/bin:${HOME}/code/go/bin:$PATH
