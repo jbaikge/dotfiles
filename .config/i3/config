@@ -66,6 +66,12 @@ bindsym $mod+Shift+Q kill
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run -fn '-*-terminus-*-*-*-*-*-*-*-*-*-*-*-*'  -nb '#080808' -nf '#808080' -sb '#87af5f' -sf '#000000' -b
 
+# scratchpad:
+# move scratchpad = Make currently focused window the scratchpad
+# scratchpad show = Show the first scratchpad window
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+
 # change focus
 #bindsym $mod+j focus left
 #bindsym $mod+k focus down
