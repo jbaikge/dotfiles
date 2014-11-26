@@ -52,6 +52,7 @@ PS1='\[$txtwht\]\u\[$txtblk\]@\[$hostcolor\]\h\[$txtrst\]:\[$txtcyn\]\w\[$txtrst
 export EDITOR=/usr/bin/vim
 export GOPATH=${HOME}/code/go
 export HISTCONTROL=ignoreboth
+export LPASS_HOME=${HOME}/.config/lastpass
 export PATH=${HOME}/bin:${HOME}/code/go/bin:$PATH
 export TODOTXT_CFG_FILE=${HOME}/.config/todo/config
 export TODOTXT_DATE_ON_ADD=1
