@@ -1,14 +1,16 @@
 {
 	"auto_complete": false,
-	"color_scheme": "Packages/Theme - Phoenix/Color Scheme/Tomorrow-Night.tmTheme",
+	"color_scheme": "Packages/User/Monokai Soda.tmTheme",
 	"draw_white_space": "all",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Termsynu",
 	"font_size": 8,
+	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"numix_folder_icons": true,
 	"phoenix_color_expanded_folder": true,
 	"phoenix_color_expanded_folder_DOC":
 	[
@@ -75,6 +77,7 @@
 	"save_on_focus_lost": true,
 	"soda_classic_tabs": false,
 	"soda_folder_icons": true,
-	"theme": "Phoenix Dark.sublime-theme",
+	"tabs_small": true,
+	"theme": "Numix Dark.sublime-theme",
 	"word_wrap": false
 }
