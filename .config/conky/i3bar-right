@@ -105,6 +105,12 @@ ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KHEF hum
 		"full_text": "${time %a %d %b} ${time %H:%M:%S}",
 		"separator": false
 	},
+# Time (UTC)
+	{
+		"color":     "\#465457",
+		"full_text": "${utime %H:%M:%S}",
+		"separator": false
+	},
 # Time (UNIX)
 	{
 		"color":     "\#465457",
