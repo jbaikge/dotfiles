@@ -102,13 +102,13 @@ ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KHEF hum
 # Time (Human Readable)
 	{
 		"color":     "\#899CA1",
-		"full_text": "${time %a %d %b} ${time %H:%M:%S}",
+		"full_text": "${time %a %d %b %H:%M:%S %Z}",
 		"separator": false
 	},
 # Time (GB)
 	{
 		"color":     "\#465457",
-		"full_text": "${tztime GB %H:%M:%S}",
+		"full_text": "${tztime GB %H:%M:%S %Z}",
 		"separator": false
 	},
 # Time (UNIX)
