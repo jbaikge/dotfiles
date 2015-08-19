@@ -105,10 +105,10 @@ ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KHEF hum
 		"full_text": "${time %a %d %b} ${time %H:%M:%S}",
 		"separator": false
 	},
-# Time (UTC)
+# Time (GB)
 	{
 		"color":     "\#465457",
-		"full_text": "${utime %H:%M:%S}",
+		"full_text": "${tztime GB %H:%M:%S}",
 		"separator": false
 	},
 # Time (UNIX)
