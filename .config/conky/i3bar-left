@@ -1,49 +1,52 @@
-background           no
-out_to_console       yes
-out_to_x             no
-override_utf8_locale yes
-pad_percents         3
-short_units          yes
-temperature_unit     fahrenheit
-total_run_times      0
-update_interval      5
+conky.config = {
+	background           = false,
+	out_to_console       = true,
+	out_to_x             = false,
+	override_utf8_locale = true,
+	pad_percents         = 3,
+	short_units          = true,
+	temperature_unit     = 'fahrenheit',
+	total_run_times      = 0,
+	update_interval      = 5
+}
 
-TEXT
+conky.text = [[
 ,[
 	{
-		"color":     "\#${if_empty ${cmdline_to_pid ntpd       }}505354${else}82B414${endif}",
+		"color":     "\#${if_running ntpd       }505354${else}82B414${endif}",
 		"full_text": "NTP"
 	},
 	{
-		"color":     "\#${if_empty ${cmdline_to_pid docker     }}505354${else}82B414${endif}",
+		"color":     "\#${if_running docker     }505354${else}82B414${endif}",
 		"full_text": "DOCKER"
 	},
 	{
-		"color":     "\#${if_empty ${cmdline_to_pid g15daemon  }}505354${else}82B414${endif}",
+		"color":     "\#${if_running g15daemon  }505354${else}82B414${endif}",
 		"full_text": "G15"
 	},
 	{
-		"color":     "\#${if_empty ${cmdline_to_pid sshd       }}505354${else}82B414${endif}",
+		"color":     "\#${if_running sshd       }505354${else}82B414${endif}",
 		"full_text": "SSHD"
 	},
 	{
-		"color":     "\#${if_empty ${cmdline_to_pid rescuetime }}505354${else}82B414${endif}",
+		"color":     "\#${if_running rescuetime }505354${else}82B414${endif}",
 		"full_text": "RESCUETIME"
 	},
 	{
-		"color":     "\#${if_empty ${cmdline_to_pid synergy    }}505354${else}82B414${endif}",
+		"color":     "\#${if_running synergy    }505354${else}82B414${endif}",
 		"full_text": "SYNERGY"
 	},
 	{
-		"color":     "\#${if_empty ${cmdline_to_pid apache2    }}505354${else}82B414${endif}",
+		"color":     "\#${if_running apache2    }505354${else}82B414${endif}",
 		"full_text": "APACHE"
 	},
 	{
-		"color":     "\#${if_empty ${cmdline_to_pid mysql      }}505354${else}82B414${endif}",
+		"color":     "\#${if_running mysql      }505354${else}82B414${endif}",
 		"full_text": "MYSQL"
 	},
 	{
-		"color":     "\#${if_empty ${cmdline_to_pid dnsmasq    }}505354${else}82B414${endif}",
+		"color":     "\#${if_running dnsmasq    }505354${else}82B414${endif}",
 		"full_text": "DNSMASQ"
 	}
 ]
+]]

@@ -1,14 +1,16 @@
-background           no
-out_to_console       yes
-out_to_x             no
-override_utf8_locale yes
-pad_percents         3
-short_units          yes
-temperature_unit     fahrenheit
-total_run_times      0
-update_interval      5
+conky.config = {
+	background           = false,
+	out_to_console       = true,
+	out_to_x             = false,
+	override_utf8_locale = true,
+	pad_percents         = 3,
+	short_units          = true,
+	temperature_unit     = 'fahrenheit',
+	total_run_times      = 0,
+	update_interval      = 5
+}
 
-TEXT
+conky.text = [[
 ,[
 # Mountpoint: /
 ${if_mounted /}
@@ -115,3 +117,4 @@ ${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KHEF hum
 		"min_width": "99m 99s"
 	}
 ]
+]]
