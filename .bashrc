@@ -66,6 +66,10 @@ shopt -s histappend
 # of LINES and COLUMNS.
 shopt -s checkwinsize
 
+# The pattern ** used in a pathname expansion context will match all files and
+# zero or more directories and  subdirectories.
+shopt -s globstar
+
 # Display error codes
 EC() { echo -e '\e[1;33m'code $?'\e[m'; }
 trap EC ERR
@@ -74,9 +78,6 @@ alias curl='curl -s'
 alias docker='sudo docker'
 alias grep='grep --color=auto --exclude-dir=.svn --exclude-dir=.git'
 alias ls='ls --color=auto'
-[[ -x /usr/bin/docker ]] && alias mongo='docker run -it --rm --volume /data:/data dockerfile/mongodb mongo'
 [[ -x /usr/bin/subl3 ]] && alias subl='subl3'
-[[ -x /usr/bin/docker ]] && alias heroku='sudo docker run --rm --volume /data:/data --workdir=$(pwd | sed s@^/home/jake/code/@/data/code/@) local/heroku'
-[[ -x /usr/bin/docker ]] && alias iron_worker='sudo docker run --rm --volume /data/code:/data/code --workdir=$(pwd | sed s@^/home/jake/code/@/data/code/@) local/iron_worker'
 alias t='~/bin/todo.sh'
 complete -F _todo t
