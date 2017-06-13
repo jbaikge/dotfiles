@@ -111,6 +111,12 @@ $endif
 		"full_text": "${tztime GB %H:%M:%S %Z}",
 		"separator": false
 	},
+# Time (Dubai)
+	{
+		"color":     "\#465457",
+		"full_text": "${tztime Asia/Dubai %H:%M:%S %Z}",
+		"separator": false
+	},
 # Time (UNIX)
 	{
 		"color":     "\#465457",
