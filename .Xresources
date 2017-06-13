@@ -36,8 +36,8 @@ urxvt*color14:   #899CA1
 urxvt*color7:    #CCCCC6
 urxvt*color15:   #F8F8F2
 
-urxvt*background:  #080808
-urxvt*foreground:  #808080
+*background:  #080808
+*foreground:  #808080
 
 urxvt*boldMode:    false
 urxvt*colorBDMode: true
