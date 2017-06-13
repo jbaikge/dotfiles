@@ -88,17 +88,17 @@ $endif
 		"min_width": "Ý 99.9K"
 	},
 # Weather
-	{
-		"color":     "\#9E6FFE",
-		"full_text": "\
-${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KHEF temperature}F \
-${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KHEF pressure}mb \
-${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KHEF wind_speed}\
-${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KHEF wind_dir} \
-${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KHEF humidity}%\
-",
-		"min_width": "99F 9999mb 99SSE 100%"
-	},
+#	{
+#		"color":     "\#9E6FFE",
+#		"full_text": "\
+#${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KHEF temperature}F \
+#${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KHEF pressure}mb \
+#${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KHEF wind_speed}\
+#${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KHEF wind_dir} \
+#${weather http://weather.noaa.gov/pub/data/observations/metar/stations/ KHEF humidity}%\
+#",
+#		"min_width": "99F 9999mb 99SSE 100%"
+#	},
 # Time (Human Readable)
 	{
 		"color":     "\#899CA1",
