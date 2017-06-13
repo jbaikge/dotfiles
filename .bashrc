@@ -59,6 +59,12 @@ export TODOTXT_DATE_ON_ADD=1
 export TODOTXT_DEFAULT_ACTION=list
 export TODOTXT_PRESERVE_LINE_NUMBERS=1
 
+# virtualenvwrapper
+export VIRTUALENV_PYTHON=/usr/bin/python3
+export WORKON_HOME=~/.virtualenvs
+WRAPPER=/usr/share/virtualenvwrapper/virtualenvwrapper.sh
+[ -f $WRAPPER ] && source $WRAPPER
+
 # append to the history file, don't overwrite it
 shopt -s histappend
 
@@ -78,6 +84,7 @@ alias curl='curl -s'
 alias docker='sudo docker'
 alias grep='grep --color=auto --exclude-dir=.svn --exclude-dir=.git'
 alias ls='ls --color=auto'
+alias renum='ls | cat -n | while read n f; do nn=`printf %02d $n`; ln -s "$f" "$nn.jpg"; done'
 [[ -x /usr/bin/subl3 ]] && alias subl='subl3'
 alias t='~/bin/todo.sh'
 complete -F _todo t
