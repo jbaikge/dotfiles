@@ -62,7 +62,7 @@ export TODOTXT_PRESERVE_LINE_NUMBERS=1
 # virtualenvwrapper
 export VIRTUALENV_PYTHON=/usr/bin/python3
 export WORKON_HOME=~/.virtualenvs
-WRAPPER=/usr/share/virtualenvwrapper/virtualenvwrapper.sh
+WRAPPER=/usr/bin/virtualenvwrapper.sh
 [ -f $WRAPPER ] && source $WRAPPER
 
 # append to the history file, don't overwrite it
