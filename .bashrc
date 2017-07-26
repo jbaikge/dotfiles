@@ -81,7 +81,6 @@ EC() { echo -e '\e[1;33m'code $?'\e[m'; }
 trap EC ERR
 
 alias curl='curl -s'
-alias docker='sudo docker'
 alias grep='grep --color=auto --exclude-dir=.svn --exclude-dir=.git'
 alias ls='ls --color=auto'
 alias renum='ls | cat -n | while read n f; do nn=`printf %02d $n`; ln -s "$f" "$nn.jpg"; done'
