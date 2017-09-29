@@ -16,7 +16,7 @@ conky.text = [[
 ${if_mounted /}
 	{
 		"color":     "\#${if_match ${fs_free_perc /} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " ROOT ${fs_free /} ${diskio sdc} ",
+		"full_text": " ROOT ${fs_free /} ${diskio sda} ",
 		"min_width": " ROOT 9999B 9999M "
 	},
 $endif
@@ -32,7 +32,7 @@ $endif
 ${if_mounted /home}
 	{
 		"color":     "\#${if_match ${fs_free_perc /home} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " HOME ${fs_free /home} ${diskio sdd} ",
+		"full_text": " HOME ${fs_free /home} ${diskio sdc} ",
 		"min_width": " HOME 9999B 9999M "
 	},
 $endif
@@ -40,7 +40,7 @@ $endif
 ${if_mounted /data/database}
 	{
 		"color":     "\#${if_match ${fs_free_perc /data/database} < 25}F92672${else}CCCCC6${endif}",
-		"full_text": " DATABASE ${fs_free /data/database} ${diskio sdb} ",
+		"full_text": " DATABASE ${fs_free /data/database} ${diskio sdd} ",
 		"min_width": " DATABASE 9999B 9999M "
 	},
 $endif
